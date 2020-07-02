@@ -7,6 +7,7 @@
     yum:
       name: httpd
       state: present
+    become_user: weloadm
   - name: ensure httpd is running
     service:
       name: httpd 
