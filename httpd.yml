@@ -5,7 +5,7 @@
   connection: local
   tasks:
   - name: Install apache packages   
-    command: sudo /bin/yum install httpd
+    command: sudo /bin/yum -y install httpd
   - name: ensure httpd is running
     service:
       name: httpd 
