@@ -2,6 +2,7 @@
 - name: This sets up an httpd webserver
   hosts: 127.0.0.1
   connection: local
+  become: yes
   tasks:
   - name: Install apache packages 
     yum:
